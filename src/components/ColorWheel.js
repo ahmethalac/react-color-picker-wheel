@@ -4,8 +4,7 @@ import React, {
 import PropTypes from 'prop-types';
 import '../styles/ColorWheel.css';
 import { coordinatesToHS, hsToCoordinates } from '../helpers/utils';
-import SaturationBar from './SaturationBar';
-import LightnessBar from './LightnessBar';
+import LevelBar from './LevelBar';
 
 const ColorWheel = ({
   color,
@@ -59,12 +58,13 @@ const ColorWheel = ({
 
   return (
     <div className="colorWheel">
-      <SaturationBar
+      <LevelBar
+        className="saturationBar"
+        handleClassName="saturationBar-level"
         size={size}
-        zeroSaturation={`hsl(${color.h},0%,${color.l}%)`}
-        fullSaturation={`hsl(${color.h},100%,${color.l}%)`}
+        backgroundColor={`linear-gradient(white, hsl(${color.h},100%,${color.l}%) 5%,hsl(${color.h},0%,${color.l}%) 95%, black)`}
         onChange={saturation => setColor({ s: saturation })}
-        saturation={color.s}
+        value={color.s}
       />
       <div
         ref={wheel}
@@ -79,11 +79,14 @@ const ColorWheel = ({
           style={{ top: y * size, left: x * size }}
         />
       </div>
-      <LightnessBar
+      <LevelBar
+        alignRight
+        className="lightnessBar"
+        handleClassName="lightnessBar-level"
         size={size}
-        middleLightness={`hsl(${color.h},${color.s}%,60%)`}
+        backgroundColor={`linear-gradient(white, white 5%, hsl(${color.h},${color.s}%,50%),black 95%, black)`}
         onChange={lightness => setColor({ l: lightness })}
-        lightness={color.l}
+        value={color.l}
       />
     </div>
   );
