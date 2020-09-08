@@ -1,13 +1,11 @@
 .colorWheel{
   flex-grow: 5;
   display: flex;
-}
-
-.saturationBar{
-  flex: 1;
+  position: relative;
 }
 
 .wheel{
+  z-index: 1;
   position: relative;
   flex: 10;
   height: 100%;
@@ -23,7 +21,6 @@
   radial-gradient(circle at 14.644660940672615% 14.64466094067263%,#ff00bf,rgba(242,13,185,.8) 10%,rgba(230,26,179,.6) 20%,rgba(204,51,166,.4) 30%,rgba(166,89,147,.2) 40%,hsla(315,0%,50%,0) 50%);
 }
 
-
 .handle{
   width: 20px;
   height: 20px;
@@ -31,8 +28,4 @@
   background-color: black;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-
-.lightnessBar{
-  flex: 1;
 }

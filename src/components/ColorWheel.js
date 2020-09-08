@@ -4,6 +4,8 @@ import React, {
 import PropTypes from 'prop-types';
 import '../styles/ColorWheel.css';
 import { coordinatesToHS, hsToCoordinates } from '../helpers/utils';
+import SaturationBar from './SaturationBar';
+import LightnessBar from './LightnessBar';
 
 const ColorWheel = ({
   color,
@@ -44,12 +46,6 @@ const ColorWheel = ({
     };
   }, [editing, setColor, size]);
 
-  const zeroSaturation = `hsl(${color.h},0%,${color.l}%)`;
-  const fullSaturation = `hsl(${color.h},100%,${color.l}%)`;
-  const zeroLightness = `hsl(${color.h},${color.s}%,0%)`;
-  const middleLightness = `hsl(${color.h},${color.s}%,60%)`;
-  const fullLightness = `hsl(${color.h},${color.s}%,100%)`;
-
   const { x, y } = hsToCoordinates(color.h, color.s);
 
   const onMouseDown = useCallback(event => {
@@ -63,11 +59,12 @@ const ColorWheel = ({
 
   return (
     <div className="colorWheel">
-      <div
-        className="saturationBar"
-        style={{
-          background: `linear-gradient(${fullSaturation},${zeroSaturation})`,
-        }}
+      <SaturationBar
+        size={size}
+        zeroSaturation={`hsl(${color.h},0%,${color.l}%)`}
+        fullSaturation={`hsl(${color.h},100%,${color.l}%)`}
+        onChange={saturation => setColor({ s: saturation })}
+        saturation={color.s}
       />
       <div
         ref={wheel}
@@ -75,17 +72,20 @@ const ColorWheel = ({
         onMouseDown={onMouseDown}
         role="button"
         tabIndex={-5}
+        style={{ margin: `0 ${size / 10}px` }}
       >
         <div
           className="handle"
           style={{ top: y * size, left: x * size }}
         />
       </div>
-      <div
-        className="lightnessBar"
-        style={{
-          background: `linear-gradient(${fullLightness},${middleLightness},${zeroLightness})`,
-        }}
+      <LightnessBar
+        size={size}
+        zeroLightness={`hsl(${color.h},${color.s}%,0%)`}
+        middleLightness={`hsl(${color.h},${color.s}%,60%)`}
+        fullLightness={`hsl(${color.h},${color.s}%,100%)`}
+        onChange={lightness => setColor({ l: lightness })}
+        lightness={color.l}
       />
     </div>
   );

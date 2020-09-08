@@ -58,7 +58,11 @@ export const rgbToHsl = (r, g, b) => {
   s *= 100;
   l *= 100;
 
-  return { h, s, l };
+  return {
+    h: Math.round(h),
+    s: Math.round(s),
+    l: Math.round(l),
+  };
 };
 
 export const hslToRgb = (h, s, l) => {

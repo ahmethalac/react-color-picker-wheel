@@ -11,7 +11,11 @@ const ColorPicker = ({
   color,
   onChange,
 }) => {
-  const [pickedColor, setPickedColor] = useState({});
+  const [pickedColor, setPickedColor] = useState({
+    hex: '#FF0000',
+    rgb: { r: 255, g: 0, b: 0 },
+    hsl: { h: 0, s: 100, l: 50 },
+  });
 
   useEffect(() => {
     if (/^#[0-9A-F]{6}$/i.test(color)) {
@@ -32,14 +36,14 @@ const ColorPicker = ({
   }, [color]);
 
   const setColorFromWheel = useCallback(hsl => {
-    const h = hsl.h || pickedColor.hsl.h;
-    const s = hsl.s || pickedColor.hsl.s;
-    const l = hsl.l || pickedColor.hsl.l;
+    const h = Math.round(hsl.h || pickedColor.hsl.h);
+    const s = Math.round(hsl.s || pickedColor.hsl.s);
+    const l = Math.round(hsl.l || pickedColor.hsl.l);
     const rgb = hslToRgb(h, s, l);
     const hex = rgbToHex(rgb.r, rgb.g, rgb.b);
     setPickedColor({ hex, rgb, hsl: { h, s, l } });
-    onChange(pickedColor);
-  }, [onChange, pickedColor]);
+    onChange({ hex, rgb, hsl: { h, s, l } });
+  }, [onChange, pickedColor.hsl]);
 
   return (
     <div>
@@ -66,7 +70,7 @@ const ColorPicker = ({
               className="hexValue"
               style={{
                 fontSize: Math.max(size, 200) / 12,
-                color: pickedColor.l > 70 ? 'black' : 'white',
+                color: pickedColor.hsl.l > 70 ? 'black' : 'white',
               }}
             >
               {pickedColor.hex}
