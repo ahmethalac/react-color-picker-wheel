@@ -24,7 +24,7 @@ const SaturationBar = ({
         // Y coordinate difference as [0,1] (0 is full saturation)
         const yDifference = event.clientY - bar.current.getBoundingClientRect().y;
         const s = (1 - Math.min(size, Math.max(0, yDifference)) / size) * 100;
-        onChange(Math.round(s));
+        onChange(parseFloat(s.toFixed(2)));
       }
     };
     const mouseUp = () => setEditing(false);

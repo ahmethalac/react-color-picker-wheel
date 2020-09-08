@@ -35,14 +35,11 @@ export const rgbToHsl = (r, g, b) => {
   const blue = b / 255;
   const max = Math.max(red, green, blue);
   const min = Math.min(red, green, blue);
-  let h;
-  let s;
+  let h = 0;
+  let s = 0;
   let l = (max + min) / 2;
 
-  if (max === min) {
-    h = 0;
-    s = 0; // achromatic
-  } else {
+  if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
@@ -51,17 +48,17 @@ export const rgbToHsl = (r, g, b) => {
       case blue: h = (red - green) / d + 4; break;
       default:
     }
-    h /= 6;
   }
+  h /= 6;
 
   h *= 360;
   s *= 100;
   l *= 100;
 
   return {
-    h: Math.round(h),
-    s: Math.round(s),
-    l: Math.round(l),
+    h: parseFloat(h.toFixed(2)),
+    s: parseFloat(s.toFixed(2)),
+    l: parseFloat(l.toFixed(2)),
   };
 };
 

@@ -25,7 +25,7 @@ const LightnessBar = ({
         // Y coordinate difference as [0,1] (0 is full saturation)
         const yDifference = event.clientY - bar.current.getBoundingClientRect().y;
         const l = (1 - Math.min(size, Math.max(0, yDifference)) / size) * 100;
-        onChange(Math.round(l));
+        onChange(parseFloat(l.toFixed(2)));
       }
     };
     const mouseUp = () => setEditing(false);
