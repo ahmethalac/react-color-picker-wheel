@@ -37,9 +37,9 @@ const ColorPicker = ({
   }, []);
 
   const setColorFromWheel = useCallback(hsl => {
-    const h = parseFloat((hsl.h || pickedColor.hsl.h).toFixed(2));
-    const s = parseFloat((hsl.s || pickedColor.hsl.s).toFixed(2));
-    const l = parseFloat((hsl.l || pickedColor.hsl.l).toFixed(2));
+    const h = parseFloat((hsl.h === undefined ? pickedColor.hsl.h : hsl.h).toFixed(2));
+    const s = parseFloat((hsl.s === undefined ? pickedColor.hsl.s : hsl.s).toFixed(2));
+    const l = parseFloat((hsl.l === undefined ? pickedColor.hsl.l : hsl.l).toFixed(2));
     const rgb = hslToRgb(h, s, l);
     const hex = rgbToHex(rgb.r, rgb.g, rgb.b);
     setPickedColor({ hex, rgb, hsl: { h, s, l } });
