@@ -60,9 +60,8 @@ const ColorWheel = ({
     <div className="colorWheel">
       <LevelBar
         className="saturationBar"
-        handleClassName="saturationBar-level"
         size={size}
-        backgroundColor={`linear-gradient(white, hsl(${color.h},100%,${color.l}%) 5%,hsl(${color.h},0%,${color.l}%) 95%, black)`}
+        background={`linear-gradient(hsl(${color.h},100%,${color.l}%),hsl(${color.h},0%,${color.l}%))`}
         onChange={saturation => setColor({ s: saturation })}
         value={color.s}
       />
@@ -76,15 +75,19 @@ const ColorWheel = ({
       >
         <div
           className="handle"
-          style={{ top: y * size, left: x * size }}
+          style={{
+            top: y * size,
+            left: x * size,
+            width: size / 15,
+            height: size / 15,
+          }}
         />
       </div>
       <LevelBar
         alignRight
         className="lightnessBar"
-        handleClassName="lightnessBar-level"
         size={size}
-        backgroundColor={`linear-gradient(white, white 5%, hsl(${color.h},${color.s}%,50%),black 95%, black)`}
+        background={`linear-gradient(white,hsl(${color.h},${color.s}%,50%), black)`}
         onChange={lightness => setColor({ l: lightness })}
         value={color.l}
       />

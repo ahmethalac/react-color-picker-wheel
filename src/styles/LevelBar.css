@@ -1,0 +1,8 @@
+.defaultHandle{
+    position: absolute;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    transform: translate(0,-50%);
+}

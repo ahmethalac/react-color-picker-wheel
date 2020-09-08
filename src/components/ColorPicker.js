@@ -97,7 +97,7 @@ ColorPicker.propTypes = {
 };
 
 ColorPicker.defaultProps = {
-  size: 200,
+  size: 100,
   initialColor: '#FF0000',
   onChange: (() => {}),
 };

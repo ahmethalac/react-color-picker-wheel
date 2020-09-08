@@ -5,15 +5,14 @@ import React, {
   useState,
 } from 'react';
 import PropTypes from 'prop-types';
-import background from '../assets/saturationBarBackground.png';
-import reverseBackground from '../assets/lightnessBarBackground.png';
+import '../styles/LevelBar.css';
 
 const LevelBar = ({
   alignRight,
   className,
   handleClassName,
   size,
-  backgroundColor,
+  background,
   onChange,
   value,
 }) => {
@@ -49,30 +48,42 @@ const LevelBar = ({
 
   const indicatorPosition = useMemo(() => {
     const top = size * (0.6 * (1 - Math.sin(Math.asin(3 / 4) * (value / 50 - 1))) - 1 / 10);
-    const horizontal = size * 0.6 * (1 - Math.cos(Math.asin(3 / 4) * (value / 50 - 1)));
+    const horizontal = size * 0.65 * (1 - Math.cos(Math.asin(3 / 4) * (value / 50 - 1)));
     return { top, horizontal };
   }, [value, size]);
-
-  const backgroundImage = `url(${alignRight ? reverseBackground : background}), ${backgroundColor}`;
 
   return (
     <div
       ref={bar}
       className={className}
       style={{
-        backgroundImage,
+        position: 'absolute',
         height: size,
-        width: size * 0.28,
+        width: size * 0.281,
+        transform: alignRight ? 'scaleX(-1)' : '',
+        cursor: 'grab',
       }}
     >
+      <svg
+        width="100%"
+        height="90%"
+        style={{
+          background,
+          marginTop: size / 20,
+        }}
+        clipPath="url(#clipBar)"
+      >
+        <clipPath id="clipBar" clipPathUnits="objectBoundingBox">
+          <path d="M0.796,1 C0.308,0.878,0,0.699,0,0.5 C0,0.301,0.308,0.122,0.796,0 H1 C0.504,0.122,0.19,0.303,0.19,0.504 C0.19,0.701,0.49,0.878,0.968,1 H0.796" />
+        </clipPath>
+      </svg>
       <div
         className={handleClassName}
-        style={alignRight ? {
-          top: indicatorPosition.top,
-          right: indicatorPosition.horizontal,
-        } : {
+        style={{
           top: indicatorPosition.top,
           left: indicatorPosition.horizontal,
+          width: size * 0.05,
+          height: size * 0.02,
         }}
       />
     </div>
@@ -86,8 +97,8 @@ LevelBar.propTypes = {
   className: PropTypes.string,
   /** Css class name for handle */
   handleClassName: PropTypes.string,
-  /** Background color in css format */
-  backgroundColor: PropTypes.string,
+  /** Background in css format */
+  background: PropTypes.string,
   /** height of the bar */
   size: PropTypes.number.isRequired,
   /** zero saturation color string in css hsl format (hsl(0, 5%, 10%)). */
@@ -100,7 +111,7 @@ LevelBar.defaultProps = {
   alignRight: false,
   className: 'levelBar',
   handleClassName: 'defaultHandle',
-  backgroundColor: 'black',
+  background: 'black',
   onChange: (() => {}),
   value: 100,
 };

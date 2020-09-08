@@ -1,20 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/App.css';
 import ColorPicker from './ColorPicker';
 
-const App = () => {
-  const [color, setColor] = useState({});
-  return (
-    <div
-      className="App"
-      style={{ backgroundColor: color.hex }}
-    >
-      <ColorPicker
-        size={500}
-        onChange={setColor}
-      />
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <ColorPicker size={400} />
+  </div>
+);
 
 export default App;

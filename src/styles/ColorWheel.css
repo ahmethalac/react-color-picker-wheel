@@ -5,6 +5,7 @@
 }
 
 .wheel{
+  cursor: pointer;
   z-index: 1;
   position: relative;
   flex: 1;
@@ -22,19 +23,11 @@
 }
 
 .handle{
-  width: 20px;
-  height: 20px;
   border-radius: 100%;
-  background-color: black;
+  background-color: white;
+  border: 1px solid black;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-
-.saturationBar{
-  position: absolute;
-  flex: 1;
-  background-size: cover;
-  z-index: 0;
 }
 
 .saturationBar-level{
@@ -47,9 +40,6 @@
 }
 
 .lightnessBar{
-  position: absolute;
-  flex: 1;
-  background-size: contain;
   right: 0;
 }
 
