@@ -10,7 +10,6 @@ const App = () => {
       style={{ backgroundColor: color.hex }}
     >
       <ColorPicker
-        initialColor="#BBBB00"
         size={500}
         onChange={setColor}
       />

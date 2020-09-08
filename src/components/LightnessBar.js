@@ -5,9 +5,7 @@ import '../styles/LightnessBar.css';
 
 const LightnessBar = ({
   size,
-  fullLightness,
   middleLightness,
-  zeroLightness,
   onChange,
   lightness,
 }) => {
@@ -45,7 +43,7 @@ const LightnessBar = ({
       ref={bar}
       className="lightnessBar"
       style={{
-        backgroundImage: `url(${background}), linear-gradient(${fullLightness},${middleLightness},${zeroLightness})`,
+        backgroundImage: `url(${background}), linear-gradient(white, white 5%,${middleLightness},black 95%, black)`,
         height: size,
         width: size * 0.28,
       }}
@@ -61,22 +59,16 @@ const LightnessBar = ({
 LightnessBar.propTypes = {
   /** height of the bar */
   size: PropTypes.number.isRequired,
-  /** full lightness color string in css hsl format (hsl(0, 5%, 10%)). */
-  fullLightness: PropTypes.string,
   /** middle lightness color string in css hsl format (hsl(0, 5%, 10%)) */
   middleLightness: PropTypes.string,
   /** zero lightness color string in css hsl format (hsl(0, 5%, 10%)) */
-  zeroLightness: PropTypes.string,
-  /** callback function to change lightness */
   onChange: PropTypes.func,
   /** current lightness level ([0,100]) */
   lightness: PropTypes.number,
 };
 
 LightnessBar.defaultProps = {
-  fullLightness: 'hsl(0, 100%, 100%)',
   middleLightness: 'hsl(0, 100%, 50%)',
-  zeroLightness: 'hsl(0, 100%, 0%)',
   onChange: (() => {}),
   lightness: 50,
 };

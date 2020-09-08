@@ -44,7 +44,7 @@ const SaturationBar = ({
       ref={bar}
       className="saturationBar"
       style={{
-        backgroundImage: `url(${background}), linear-gradient(${fullSaturation},${zeroSaturation})`,
+        backgroundImage: `url(${background}), linear-gradient(white, ${fullSaturation} 5%,${zeroSaturation} 95%, black)`,
         height: size,
         width: size * 0.28,
       }}

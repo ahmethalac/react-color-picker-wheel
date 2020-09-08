@@ -81,9 +81,7 @@ const ColorWheel = ({
       </div>
       <LightnessBar
         size={size}
-        zeroLightness={`hsl(${color.h},${color.s}%,0%)`}
         middleLightness={`hsl(${color.h},${color.s}%,60%)`}
-        fullLightness={`hsl(${color.h},${color.s}%,100%)`}
         onChange={lightness => setColor({ l: lightness })}
         lightness={color.l}
       />
