@@ -2,8 +2,8 @@ import React, {
   useCallback, useEffect, useRef, useState,
 } from 'react';
 import PropTypes from 'prop-types';
-import '../styles/ColorWheel.css';
-import { coordinatesToHS, hsToCoordinates } from '../helpers/utils';
+import './styles/ColorWheel.css';
+import { coordinatesToHS, hsToCoordinates } from './helpers/utils';
 import LevelBar from './LevelBar';
 
 const ColorWheel = ({

@@ -1,25 +1,44 @@
 {
-  "name": "react-color-picker",
+  "name": "react-color-picker-wheel",
   "version": "0.1.0",
-  "private": true,
+  "description": "Color picker component for React.js using color wheel",
+  "keywords": [
+    "react",
+    "react-color",
+    "react-color-picker",
+    "color",
+    "color-picker",
+    "color-wheel"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.3.2",
+    "@testing-library/user-event": "7.1.2",
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "eslint-config-airbnb": "18.2.0",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "husky": "4.2.5",
     "lint-staged": "10.2.11"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "react": "16.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "SET NODE_ENV=production && mkdir dist && npx babel src/ColorPicker --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,5 +56,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "author": {
+    "name": "ahmetfeyzihalac",
+    "email": "ahmetfeyzihalac@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmethalac/react-color-picker-wheel"
+  },
+  "license": "MIT"
 }

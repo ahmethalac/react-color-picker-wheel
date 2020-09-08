@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import '../styles/ColorPicker.css';
+import './styles/ColorPicker.css';
 import PropTypes from 'prop-types';
 import ColorWheel from './ColorWheel';
 import {
   hexToRGB, hslToRgb, rgbToHex, rgbToHsl,
-} from '../helpers/utils';
+} from './helpers/utils';
 
 const ColorPicker = ({
   size,
