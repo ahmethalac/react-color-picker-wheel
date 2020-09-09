@@ -51,8 +51,8 @@ const ColorPicker = ({
       <div
         className="outerContainer"
         style={{
-          height: Math.max(size, 200),
-          width: Math.max(size, 200),
+          height: size,
+          width: size,
         }}
       >
         <ColorWheel
@@ -70,7 +70,7 @@ const ColorPicker = ({
             <div
               className="hexValue"
               style={{
-                fontSize: Math.max(size, 200) / 12,
+                fontSize: size / 12,
                 color: pickedColor.hsl.l > 70 ? 'black' : 'white',
               }}
             >

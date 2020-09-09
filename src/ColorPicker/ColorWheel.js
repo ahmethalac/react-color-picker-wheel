@@ -80,6 +80,7 @@ const ColorWheel = ({
             left: x * size,
             width: size / 15,
             height: size / 15,
+            border: `${size / 150}px solid black`,
           }}
         />
       </div>

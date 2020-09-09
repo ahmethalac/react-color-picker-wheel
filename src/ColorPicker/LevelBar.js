@@ -83,7 +83,8 @@ const LevelBar = ({
           top: indicatorPosition.top,
           left: indicatorPosition.horizontal,
           width: size * 0.05,
-          height: size * 0.02,
+          height: size * 0.05,
+          border: `${size * 0.005}px solid black`,
         }}
       />
     </div>
