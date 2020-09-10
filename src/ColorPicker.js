@@ -33,7 +33,6 @@ const ColorPicker = ({
     } else {
       setPickedColor({ hex: '#FF0000', rgb: { r: 255, g: 0, b: 0 }, hsl: { h: 0, s: 100, l: 50 } });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setColorFromWheel = useCallback(hsl => {
@@ -101,4 +100,5 @@ ColorPicker.defaultProps = {
   initialColor: '#FF0000',
   onChange: (() => {}),
 };
+
 export default ColorPicker;

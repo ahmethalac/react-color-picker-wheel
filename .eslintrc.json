@@ -5,12 +5,13 @@
         "es2020": true
     },
     "extends": [
-        "react-app",
+        "plugin:react/recommended",
         "plugin:jsx-a11y/recommended",
         "airbnb"
     ],
     "plugins": [
-        "jsx-a11y"
+        "jsx-a11y",
+        "react"
     ],
     "parserOptions": {
         "ecmaVersion": 11
@@ -27,5 +28,11 @@
                 ]
             }
         ]
-    }
+    },
+    "settings": {
+        "react": {
+            "version": "16.3.1"
+        }
+    },
+    "ignorePatterns": ["webpack.config.js", "lib"]
 }

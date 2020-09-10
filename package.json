@@ -2,6 +2,7 @@
   "name": "react-color-picker-wheel",
   "version": "0.1.0",
   "description": "Color picker component for React.js using color wheel",
+  "homepage": "https://ahmethalac.github.io/react-color-picker-wheel/",
   "keywords": [
     "react",
     "react-color",
@@ -10,40 +11,39 @@
     "color-picker",
     "color-wheel"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
   "babel": {
     "presets": [
       "react",
       "env",
-      "stage-2"
+      "stage-0"
     ]
   },
+  "main": "./lib/ColorPicker.js",
   "devDependencies": {
-    "@testing-library/jest-dom": "4.2.4",
-    "@testing-library/react": "9.3.2",
-    "@testing-library/user-event": "7.1.2",
-    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.5",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
-    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "css-loader": "4.3.0",
+    "eslint": "7.8.1",
     "eslint-config-airbnb": "18.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.6",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11"
+    "lint-staged": "10.2.11",
+    "style-loader": "1.2.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12"
   },
   "dependencies": {
     "prop-types": "15.7.2",
     "react": "16.13.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "SET NODE_ENV=production && mkdir dist && npx babel src/ColorPicker --out-dir dist --copy-files",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "build": "webpack",
+    "lint": "eslint src"
   },
   "browserslist": {
     "production": [
