@@ -1,0 +1,7 @@
+/node_modules
+/build
+/.idea
+/public
+.env
+/src/index.js
+/media
