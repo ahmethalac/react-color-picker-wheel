@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-color-picker-wheel/static/css/main.0e5108e5.chunk.css",
-    "main.js": "/react-color-picker-wheel/static/js/main.0482f673.chunk.js",
-    "main.js.map": "/react-color-picker-wheel/static/js/main.0482f673.chunk.js.map",
+    "main.css": "/react-color-picker-wheel/static/css/main.e439c7fd.chunk.css",
+    "main.js": "/react-color-picker-wheel/static/js/main.08162923.chunk.js",
+    "main.js.map": "/react-color-picker-wheel/static/js/main.08162923.chunk.js.map",
     "runtime-main.js": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js",
     "runtime-main.js.map": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js.map",
     "static/js/2.487d968f.chunk.js": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js",
     "static/js/2.487d968f.chunk.js.map": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.map",
     "index.html": "/react-color-picker-wheel/index.html",
-    "precache-manifest.fb3e1273dd8b139e2238e4ce283acf10.js": "/react-color-picker-wheel/precache-manifest.fb3e1273dd8b139e2238e4ce283acf10.js",
+    "precache-manifest.92942071869d192aaaa606a06cfba59a.js": "/react-color-picker-wheel/precache-manifest.92942071869d192aaaa606a06cfba59a.js",
     "service-worker.js": "/react-color-picker-wheel/service-worker.js",
-    "static/css/main.0e5108e5.chunk.css.map": "/react-color-picker-wheel/static/css/main.0e5108e5.chunk.css.map",
+    "static/css/main.e439c7fd.chunk.css.map": "/react-color-picker-wheel/static/css/main.e439c7fd.chunk.css.map",
     "static/js/2.487d968f.chunk.js.LICENSE.txt": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cac68ca2.js",
     "static/js/2.487d968f.chunk.js",
-    "static/css/main.0e5108e5.chunk.css",
-    "static/js/main.0482f673.chunk.js"
+    "static/css/main.e439c7fd.chunk.css",
+    "static/js/main.08162923.chunk.js"
   ]
 }
