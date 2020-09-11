@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/react-color-picker-wheel/static/css/main.7164e222.chunk.css",
-    "main.js": "/react-color-picker-wheel/static/js/main.fe38ddf9.chunk.js",
-    "main.js.map": "/react-color-picker-wheel/static/js/main.fe38ddf9.chunk.js.map",
+    "main.css": "/react-color-picker-wheel/static/css/main.bb3b1372.chunk.css",
+    "main.js": "/react-color-picker-wheel/static/js/main.f4ad7b42.chunk.js",
+    "main.js.map": "/react-color-picker-wheel/static/js/main.f4ad7b42.chunk.js.map",
     "runtime-main.js": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js",
     "runtime-main.js.map": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js.map",
-    "static/js/2.487d968f.chunk.js": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js",
-    "static/js/2.487d968f.chunk.js.map": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.map",
+    "static/js/2.e255ef33.chunk.js": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js",
+    "static/js/2.e255ef33.chunk.js.map": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js.map",
     "index.html": "/react-color-picker-wheel/index.html",
-    "precache-manifest.b7e8d3ecee12374b53a0690fb115d2e6.js": "/react-color-picker-wheel/precache-manifest.b7e8d3ecee12374b53a0690fb115d2e6.js",
+    "precache-manifest.4bff7a7775d778f38876139ab1f379f2.js": "/react-color-picker-wheel/precache-manifest.4bff7a7775d778f38876139ab1f379f2.js",
     "service-worker.js": "/react-color-picker-wheel/service-worker.js",
-    "static/css/main.7164e222.chunk.css.map": "/react-color-picker-wheel/static/css/main.7164e222.chunk.css.map",
-    "static/js/2.487d968f.chunk.js.LICENSE.txt": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.LICENSE.txt"
+    "static/css/main.bb3b1372.chunk.css.map": "/react-color-picker-wheel/static/css/main.bb3b1372.chunk.css.map",
+    "static/js/2.e255ef33.chunk.js.LICENSE.txt": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js.LICENSE.txt",
+    "static/media/mask.svg": "/react-color-picker-wheel/static/media/mask.3486ea3e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cac68ca2.js",
-    "static/js/2.487d968f.chunk.js",
-    "static/css/main.7164e222.chunk.css",
-    "static/js/main.fe38ddf9.chunk.js"
+    "static/js/2.e255ef33.chunk.js",
+    "static/css/main.bb3b1372.chunk.css",
+    "static/js/main.f4ad7b42.chunk.js"
   ]
 }

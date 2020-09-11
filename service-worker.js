@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-color-picker-wheel/precache-manifest.b7e8d3ecee12374b53a0690fb115d2e6.js"
+  "/react-color-picker-wheel/precache-manifest.4bff7a7775d778f38876139ab1f379f2.js"
 );
 
 self.addEventListener('message', (event) => {
