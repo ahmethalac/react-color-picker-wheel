@@ -4,4 +4,5 @@
 /public
 .env
 /src/index.js
+/src/index.css
 /media
