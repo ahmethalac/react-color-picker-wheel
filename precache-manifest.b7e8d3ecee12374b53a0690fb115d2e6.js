@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce6c4e9e0f0d8b807a19ad689b996788",
+    "revision": "ad1c37acfea527b88afb1da6b9dc2372",
     "url": "/react-color-picker-wheel/index.html"
   },
   {
-    "revision": "0ffc8ada23e4c1c6aecf",
-    "url": "/react-color-picker-wheel/static/css/main.e439c7fd.chunk.css"
+    "revision": "383f950337e10bf21c1c",
+    "url": "/react-color-picker-wheel/static/css/main.7164e222.chunk.css"
   },
   {
     "revision": "b245f3cfa5256081a5b3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0ffc8ada23e4c1c6aecf",
-    "url": "/react-color-picker-wheel/static/js/main.08162923.chunk.js"
+    "revision": "383f950337e10bf21c1c",
+    "url": "/react-color-picker-wheel/static/js/main.fe38ddf9.chunk.js"
   },
   {
     "revision": "d657cc76ce9308986bc4",
