@@ -5,7 +5,7 @@
 
 **Color picker component for React.js using color wheel**
 
-<img src="https://github.com/ahmethalac/react-color-picker-wheel/blob/master/media/example.gif" width="300" height="300"/>
+![demo](./media/example.gif)
 
 Demo can be found here: https://ahmethalac.github.io/react-color-picker-wheel/
 
