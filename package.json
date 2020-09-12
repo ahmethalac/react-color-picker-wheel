@@ -1,6 +1,6 @@
 {
   "name": "react-color-picker-wheel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Color picker component for React.js using color wheel",
   "homepage": "https://ahmethalac.github.io/react-color-picker-wheel/",
   "keywords": [
@@ -35,7 +35,8 @@
     "lint-staged": "10.2.11",
     "style-loader": "1.2.1",
     "webpack": "4.44.1",
-    "webpack-cli": "3.3.12"
+    "webpack-cli": "3.3.12",
+    "svg-inline-loader": "0.8.2"
   },
   "dependencies": {
     "prop-types": "15.7.2",

@@ -5,3 +5,8 @@
     border-radius: 100%;
     transform: translate(0,-50%);
 }
+
+.barBackground{
+    height: 90%;
+    width: 100%;
+}
