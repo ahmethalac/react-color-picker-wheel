@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.1.2] - 2020-09-12
+  - bug fix :: demo gif can be seen on npm page now
+  
 ## [0.1.1] - 2020-09-12
   - bug fix :: levelbars are visible on Firefox now
   - bug fix :: color wheel is visible on Safari now
