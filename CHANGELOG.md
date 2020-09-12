@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.1.3] - 2020-09-12
+  - bug fix :: levelbars' appearance on Firefox corrected
+  
 ## [0.1.2] - 2020-09-12
   - bug fix :: demo gif can be seen on npm page now
   

@@ -10,3 +10,9 @@
     height: 90%;
     width: 100%;
 }
+
+.firefox{
+    mask-image: url('../assets/mask.svg');
+    -webkit-mask-image: url('../assets/mask.svg');
+    mask-size: cover;
+}

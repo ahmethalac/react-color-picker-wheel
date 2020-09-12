@@ -6,7 +6,6 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 import './styles/LevelBar.css';
-import mask from './assets/mask.svg';
 
 const LevelBar = ({
   alignRight,
@@ -57,9 +56,8 @@ const LevelBar = ({
     if (typeof InstallTrigger !== 'undefined') { // isFirefox
       return (
         <div
-          className="barBackground"
+          className="barBackground firefox"
           style={{
-            maskImage: `url(${mask})`,
             maskSize: 'contain',
             background,
             marginTop: size / 20,
