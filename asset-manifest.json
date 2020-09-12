@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-color-picker-wheel/static/css/main.bb3b1372.chunk.css",
-    "main.js": "/react-color-picker-wheel/static/js/main.3242636b.chunk.js",
-    "main.js.map": "/react-color-picker-wheel/static/js/main.3242636b.chunk.js.map",
+    "main.css": "/react-color-picker-wheel/static/css/main.d88a18b3.chunk.css",
+    "main.js": "/react-color-picker-wheel/static/js/main.d3f8eed9.chunk.js",
+    "main.js.map": "/react-color-picker-wheel/static/js/main.d3f8eed9.chunk.js.map",
     "runtime-main.js": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js",
     "runtime-main.js.map": "/react-color-picker-wheel/static/js/runtime-main.cac68ca2.js.map",
-    "static/js/2.e255ef33.chunk.js": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js",
-    "static/js/2.e255ef33.chunk.js.map": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js.map",
+    "static/js/2.487d968f.chunk.js": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js",
+    "static/js/2.487d968f.chunk.js.map": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.map",
     "index.html": "/react-color-picker-wheel/index.html",
-    "precache-manifest.86fa41a18a9577067f1e9f8701ad8abf.js": "/react-color-picker-wheel/precache-manifest.86fa41a18a9577067f1e9f8701ad8abf.js",
+    "precache-manifest.5ba95ee4b047ad30f8a4ecd746c7d8b2.js": "/react-color-picker-wheel/precache-manifest.5ba95ee4b047ad30f8a4ecd746c7d8b2.js",
     "service-worker.js": "/react-color-picker-wheel/service-worker.js",
-    "static/css/main.bb3b1372.chunk.css.map": "/react-color-picker-wheel/static/css/main.bb3b1372.chunk.css.map",
-    "static/js/2.e255ef33.chunk.js.LICENSE.txt": "/react-color-picker-wheel/static/js/2.e255ef33.chunk.js.LICENSE.txt",
-    "static/media/mask.svg": "/react-color-picker-wheel/static/media/mask.3486ea3e.svg"
+    "static/css/main.d88a18b3.chunk.css.map": "/react-color-picker-wheel/static/css/main.d88a18b3.chunk.css.map",
+    "static/js/2.487d968f.chunk.js.LICENSE.txt": "/react-color-picker-wheel/static/js/2.487d968f.chunk.js.LICENSE.txt",
+    "static/media/LevelBar.css": "/react-color-picker-wheel/static/media/mask.3486ea3e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cac68ca2.js",
-    "static/js/2.e255ef33.chunk.js",
-    "static/css/main.bb3b1372.chunk.css",
-    "static/js/main.3242636b.chunk.js"
+    "static/js/2.487d968f.chunk.js",
+    "static/css/main.d88a18b3.chunk.css",
+    "static/js/main.d3f8eed9.chunk.js"
   ]
 }
