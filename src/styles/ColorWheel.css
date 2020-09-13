@@ -1,7 +1,7 @@
 .colorWheel{
-  flex-grow: 5;
   display: flex;
   position: relative;
+  height: 83.33%;
 }
 
 .wheel{

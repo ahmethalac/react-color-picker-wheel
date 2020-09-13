@@ -52,39 +52,6 @@ const LevelBar = ({
     return { top, horizontal };
   }, [value, size]);
 
-  const crossBrowserBar = useMemo(() => {
-    if (typeof InstallTrigger !== 'undefined') { // isFirefox
-      return (
-        <div
-          className="barBackground firefox"
-          style={{
-            maskSize: 'contain',
-            background,
-            marginTop: size / 20,
-          }}
-        />
-      );
-    }
-    return (
-      <svg
-        className="barBackground"
-        width="100%"
-        height="90%"
-        style={{
-          background,
-          marginTop: size / 20,
-        }}
-        clipPath="url(#clipBar)"
-      >
-        <clipPath id="clipBar" clipPathUnits="objectBoundingBox">
-          <path
-            d="M0.796,1 C0.308,0.878,0,0.699,0,0.5 C0,0.301,0.308,0.122,0.796,0 H1 C0.504,0.122,0.19,0.303,0.19,0.504 C0.19,0.701,0.49,0.878,0.968,1 H0.796"
-          />
-        </clipPath>
-      </svg>
-    );
-  }, [background, size]);
-
   return (
     <div
       ref={bar}
@@ -97,7 +64,13 @@ const LevelBar = ({
         cursor: 'grab',
       }}
     >
-      {crossBrowserBar}
+      <div
+        className="barBackground"
+        style={{
+          background,
+          marginTop: size / 20,
+        }}
+      />
       <div
         className={handleClassName}
         style={{

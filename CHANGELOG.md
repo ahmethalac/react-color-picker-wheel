@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.1.6] - 2020-09-14
+  - bug fix :: appearance on Safari browser corrected
+  
 ## [0.1.3] - 2020-09-12
   - bug fix :: levelbars' appearance on Firefox corrected
   
