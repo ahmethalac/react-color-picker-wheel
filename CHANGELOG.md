@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.1.7] - 2020-12-28
+  - bug fix :: fix "https://reactjs.org/warnings/invalid-hook-call-warning.html" for mismatching React version with host app (notably React 17)
+
 ## [0.1.6] - 2020-09-14
   - bug fix :: appearance on Safari browser corrected
   
