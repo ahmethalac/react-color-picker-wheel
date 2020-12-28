@@ -1,6 +1,6 @@
 {
   "name": "react-color-picker-wheel",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Color picker component for React.js using color wheel",
   "homepage": "https://ahmethalac.github.io/react-color-picker-wheel/",
   "keywords": [
@@ -39,7 +39,9 @@
     "svg-url-loader": "6.0.0"
   },
   "dependencies": {
-    "prop-types": "15.7.2",
+    "prop-types": "15.7.2"
+  },
+  "peerDependencies": {
     "react": "16.13.1"
   },
   "scripts": {
