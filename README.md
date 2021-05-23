@@ -1,9 +1,8 @@
 # react-color-picker-wheel
 
+Color picker component for React.js using color wheel
 
 [![npm version](https://badge.fury.io/js/react-color-picker-wheel.svg)](https://badge.fury.io/js/react-color-picker-wheel)
-
-**Color picker component for React.js using color wheel**
 
 ![demo](./media/example.gif)
 
